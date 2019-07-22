@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="title">Food Survey</h1>
+
+  <p id="description">A survey on your favourite foods.</p>
+  
+  <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+    
+    <div class="form-container">
+    <label id="name-label">
+      Name: 
+    <input name="name" id="name" type="text" placeholder="Enter your name here"required>
+    </label>
+  </div>
+
+    <div class="form-container">
+    <label id="email-label">
+      Email: 
+    <input name="email" id="email" type="email" placeholder="Enter your email here" required>
+    </label>
+  </div>
+
+    <div class="form-container">
+      <label id="number-label">
+        How many times do you have takeaway a week? 
+      <input name="number" id="number" type="number" min="1" max="10" placeholder="Choose number">
+      </label>
+    </div>
+    
+    <div class="form-container">
+        Which part of a meal out is your favourite?
+    <select name="food" id="dropdown">
+      <option value="starter">Starter</option>
+      <option value="main-course">Main Course</option>
+      <option value="meal-dessert">Dessert</option>
+    </select>
+  </div>
+
+  <div class="form-container">
+    <label for="chinese">
+      Which cuisine do you prefer?
+  <input id="chinese" type="radio" name="cuisine" value="1">Chinese
+</label>
+    <label for="indian">
+  <input id="indian" type="radio" name="cuisine" value="2">Indian
+</label>
+<label for="thai">
+    <input id="thai" type="radio" name="cuisine" value="3">Thai
+  </label>
+  <label for="american">
+      <input id="american" type="radio" name="cuisine" value="4">American
+    </label>
+</div>
+    
+  <div class="form-container">
+    <label for="brownie">
+      Which dessert would you prefer?
+  <input id="browine" type="radio" name="dessert" value="1">Brownie
+</label>
+    <label for="cake">
+  <input id="cake" type="radio" name="dessert" value="2">Cake
+</label>
+<label for="cheesecake">
+    <input id="cheesecake" type="radio" name="dessert" value="3">Cheesecake
+  </label>
+  <label for="ice-cream">
+      <input id="ice-cream" type="radio" name="dessert" value="4">Ice Cream
+    </label>
+</div>
+    
+  <div class="form-container">
+    Which are your favourite pizza toppings? (Tick all that apply)
+    <label for="cheese"><input id="cheese" type="checkbox" name="pizza-topping" value="1"> Cheese</label>
+    <label for="bacon"><input id="bacon" type="checkbox" name="pizza-topping" value="2"> Bacon</label>
+    <label for="mushrooms"><input id="mushrooms" type="checkbox" name="pizza-topping" value="3"> Mushrooms</label>
+    <label for="pepperoni"><input id="pepperoni" type="checkbox" name="pizza-topping" value="4"> Pepperoni</label>
+    <label for="ham"><input id="ham" type="checkbox" name="pizza-topping" value="5"> Ham</label>
+    <label for="pineapple"><input id="pineapple" type="checkbox" name="pizza-topping" value="6"> Pineapple</label>
+
+
+
+
+  </div>
+
+  <div class="form-container">
+    If you have additional foods you would like to highlight as your ultimate favourite, please comment here:
+    <textarea rows="4" cols="40">
+      Enter comment here.
+    </textarea>
+  </div>
+    
+    <button type="submit" id="submit">Submit</button>
+  </form>
+</body>
+</html>
